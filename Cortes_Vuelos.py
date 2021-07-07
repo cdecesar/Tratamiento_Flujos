@@ -362,7 +362,8 @@ longitud = fichero2['LONG_TXT']
 contador2 = 0
 diccionario = {}
 sacar_coordenadas(nombres, latitud, longitud, contador2, lista_nombres, diccionario)
-
+print(diccionario.get("DONOS"))
+print(diccionario.get("BANEV"))
 for i in lista_nombres:
     if i not in diccionario.keys():
         lista_mal.append(i)
@@ -413,6 +414,7 @@ for routeKey in dicct_flujo_puntos_clave.keys():
         cortes = []
         p1x = intersecciones[0].x
         p1y = intersecciones[0].y
+
         p2x = intersecciones[1].x
         p2y = intersecciones[1].y
 
@@ -428,10 +430,10 @@ for routeKey in dicct_flujo_puntos_clave.keys():
         cortes.append(p2_)
 
         coordenadas_r.append("Punto" + str(n_punto))
-        diccionario2.update({"Punto" + str(n_punto): cortes[0]})
+        diccionario2.update({"Punto" + str(n_punto): p1_})
         n_punto += 1
         coordenadas_r.append("Punto" + str(n_punto))
-        diccionario2.update({"Punto" + str(n_punto): cortes[1]})
+        diccionario2.update({"Punto" + str(n_punto): p2_})
         n_punto += 1
 
         datos = {routeKey: coordenadas_r}
@@ -515,6 +517,9 @@ for routeKey in dicct_flujo_puntos_clave.keys():
                 coordenadas.append("Punto" + str(n_punto))
                 diccionario2.update({"Punto" + str(n_punto): cerca_ultimo2})
                 n_punto += 1
+                print(routeKey)
+                print(cerca_primero2)
+                print(cerca_ultimo2)
 
                 datos = {routeKey: coordenadas}
                 diccionario_nuevos_flujos.update(datos)
