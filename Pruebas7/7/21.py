@@ -333,29 +333,37 @@ fila_nombres = fichero1['rutaExtend']
 sector = fichero1['SectorCode']
 forma_entrada = fichero1['attitud_IN']
 forma_salida = fichero1['attitud_OUT']
+
 puntos_no_queremos = ['HERMI', 'D104', 'MITUM', 'ADEDI']
 lista_mal = []
 
 contador_1 = 0
 lista_nombres = []
 dicct_flujo_puntos_clave = {}
+diccionario_ev_vuelo = {}
 
 while contador_1 < fila_nombres.size:
     if sector[contador_1] == 'LECMPAU':
-        flujo_completo = fila_nombres[contador_1]
-        palabra = re.split("-", flujo_completo)
-        lista_aux = []
-        #lista_aux.append(palabra)
-        for i in palabra:
-            if i not in puntos_no_queremos:
-                lista_aux.append(i)
+        if forma_entrada[contador_1] == 'CRUISE' and forma_salida[contador_1] == 'DESCEND':
+            flujo_completo = fila_nombres[contador_1]
+            palabra = re.split("-", flujo_completo)
+            lista_aux = []
+            #lista_aux.append(palabra)
+            for i in palabra:
+                if i not in puntos_no_queremos:
+                    lista_aux.append(i)
 
-        if len(lista_aux) > 1:
-            info = {rutas[contador_1]: lista_aux}
-            dicct_flujo_puntos_clave.update(info)
-            for n in palabra:
-                if n not in lista_nombres:
-                    lista_nombres.append(n)
+            if len(lista_aux) > 1:
+                info = {rutas[contador_1]: lista_aux}
+                dicct_flujo_puntos_clave.update(info)
+                for n in palabra:
+                    if n not in lista_nombres:
+                        lista_nombres.append(n)
+
+            tipo_vuelo = []
+            tipo_vuelo.append(forma_entrada[contador_1])
+            tipo_vuelo.append((forma_salida[contador_1]))
+            diccionario_ev_vuelo.update({rutas[contador_1]: tipo_vuelo})
 
     contador_1 += 1
 
