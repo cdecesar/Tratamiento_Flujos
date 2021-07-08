@@ -331,6 +331,8 @@ def sacar_coordenadas_poligono(puntos, dicct, lista):
 rutas = fichero1['routeKey']
 fila_nombres = fichero1['rutaExtend']
 sector = fichero1['SectorCode']
+forma_entrada = fichero1['attitud_IN']
+forma_salida = fichero1['attitud_OUT']
 puntos_no_queremos = ['HERMI', 'D104', 'MITUM', 'ADEDI']
 lista_mal = []
 
