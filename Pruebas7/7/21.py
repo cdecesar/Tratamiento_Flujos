@@ -393,20 +393,20 @@ poligono = Polygon(lista_vertices)
 x, y = poligono.exterior.xy
 pyplot.plot(x, y)
 
-o = ['4155N00107W', 'ARVID']
-e = []
-for i in o:
-    e.append(tuple(diccionario.get(i)))
-linea_rara = LineString(e)
+#o = ['4155N00107W', 'ARVID']
+#e = []
+#for i in o:
+#    e.append(tuple(diccionario.get(i)))
+#linea_rara = LineString(e)
 #print(linea_rara)
-ln = prolongar_recta(linea_rara, poligono)
-xx, yy = ln.xy
-ln2 = ln.intersection(poligono.exterior)
-print(ln2)
-print(type(ln2))
-print(list(ln2[2].coords))
-pyplot.plot(xx, yy)
-pyplot.show()
+#ln = prolongar_recta(linea_rara, poligono)
+#xx, yy = ln.xy
+#ln2 = ln.intersection(poligono.exterior)
+#print(ln2)
+#print(type(ln2))
+#print(list(ln2[2].coords))
+#pyplot.plot(xx, yy)
+#pyplot.show()
 
 n_punto = 1
 diccionario2 = {}
@@ -589,69 +589,119 @@ for routeKey in dicct_flujo_puntos_clave.keys():
         nueva_recta4 = prolongar_recta(linea4, poligono)
         intersecciones4 = nueva_recta4.intersection(poligono.exterior)
 
-        contador_cortes = 0
+        sentido = -1
         p = diccionario.get(flujo[0])
-        primero = []
-        primero.append(p[1])
-        primero.append(p[0])
-        primero = tuple(primero)
+        p2 = diccionario.get(flujo[1])
+        if p[0] != p2[0]:
+            if p[0] > p2[0]:
+                sentido = 0 #sentido hacia la izquierda
+            else:
+                sentido = 1 #sentido hacia la derecha
+            if isinstance(intersecciones3, shapely.geometry.multipoint.MultiPoint):
+                if sentido == 0:
+                    primero = []
+                    primero.append(intersecciones3[len(intersecciones3) - 1].x)
+                    primero.append(intersecciones3[len(intersecciones3) - 1].y)
+                    primero = tuple(primero)
+                else:
+                    primero = []
+                    primero.append(intersecciones3[0].x)
+                    primero.append(intersecciones3[0].y)
+                    primero = tuple(primero)
+            else:
+                if sentido == 0:
+                    primero = []
+                    primero.append(intersecciones3[len(intersecciones3) - 2].x)
+                    primero.append(intersecciones3[len(intersecciones3) - 2].y)
+                    primero = tuple(primero)
+                else:
+                    primero = []
+                    primero.append(intersecciones3[0].x)
+                    primero.append(intersecciones3[0].y)
+                    primero = tuple(primero)
+        else:
+            if p[1] > p2[1]:
+                sentido = 0  # sentido hacia abajo, buscamos max
+            else:
+                sentido = 1
 
+            lista_latitudes = []
+            for inter in intersecciones3:
+                if isinstance(inter, shapely.geometry.point.Point):
+                    lista_latitudes.append(inter.y)
+            lista_latitudes.sort(reverse=True)
+
+            if sentido == 0:
+                primero = []
+                primero.append(p[0])
+                primero.append(lista_latitudes[0])
+                primero = tuple(primero)
+            else:
+                primero = []
+                primero.append(p[0])
+                primero.append(lista_latitudes[len(lista_latitudes) - 1])
+                primero = tuple(primero)
+
+        sentido = -1
         u = diccionario.get(flujo[len(flujo) - 1])
-        ultimo = []
-        ultimo.append(u[1])
-        ultimo.append(u[0])
-        ultimo = tuple(ultimo)
+        u2 = diccionario.get(flujo[len(flujo) - 2])
+        if u[0] != u2[0]:
+            if u[0] > u2[0]:
+                sentido = 1  # sentido hacia la derecha
+            else:
+                sentido = 0  # sentido hacia la izquierda
 
-        cerca_primero = 0
-        d_cerca_p = 0
+            if isinstance(intersecciones4, shapely.geometry.multipoint.MultiPoint):
+                if sentido == 0:
+                    ultimo = []
+                    ultimo.append(intersecciones4[0].x)
+                    ultimo.append(intersecciones4[0].y)
+                    ultimo = tuple(ultimo)
+                else:
+                    ultimo = []
+                    ultimo.append(intersecciones4[len(intersecciones4) - 1].x)
+                    ultimo.append(intersecciones4[len(intersecciones4) - 1].y)
+                    ultimo = tuple(ultimo)
+            else:
+                if sentido == 0:
+                    ultimo = []
+                    ultimo.append(intersecciones4[0].x)
+                    ultimo.append(intersecciones4[0].y)
+                    ultimo = tuple(ultimo)
+                else:
+                    ultimo = []
+                    ultimo.append(intersecciones4[len(intersecciones4) - 2].x)
+                    ultimo.append(intersecciones4[len(intersecciones4) - 2].y)
+                    ultimo = tuple(ultimo)
+        else:
+            if u[1] > u2[1]:
+                sentido = 1  # sentido hacia arriba, buscamos max
+            else:
+                sentido = 0
 
-        cerca_ultimo = 0
-        d_cerca_u = 0
+            lista_latitudes = []
+            for inter in intersecciones4:
+                if isinstance(inter, shapely.geometry.point.Point):
+                    lista_latitudes.append(inter.y)
+            lista_latitudes.sort(reverse=True)
 
-        while contador_cortes < len(intersecciones3):
-            c = intersecciones3[contador_cortes]
-            punto = []
-            punto.append(c.y)
-            punto.append(c.x)
-            punto = tuple(punto)
-
-            d_primero = geopy.distance.distance(primero, punto).km
-            if cerca_primero == 0 or d_cerca_p > d_primero:
-                cerca_primero = punto
-                d_cerca_p = d_primero
-
-            contador_cortes += 1
-
-        contador_cortes = 0
-        while contador_cortes < len(intersecciones4):
-            c = intersecciones4[contador_cortes]
-            punto = []
-            punto.append(c.y)
-            punto.append(c.x)
-            punto = tuple(punto)
-
-            d_u = geopy.distance.distance(ultimo, punto).km
-            if cerca_ultimo == 0 or d_cerca_u > d_u:
-                cerca_ultimo = punto
-                d_cerca_u = d_u
-
-            contador_cortes += 1
-
-        cerca_primero2 = []
-        cerca_primero2.append(cerca_primero[1])
-        cerca_primero2.append(cerca_primero[0])
-        cerca_primero2 = tuple(cerca_primero2)
-        cerca_ultimo2 = []
-        cerca_ultimo2.append(cerca_ultimo[1])
-        cerca_ultimo2.append(cerca_ultimo[0])
-        cerca_ultimo2 = tuple(cerca_ultimo2)
+            if sentido == 1:
+                ultimo = []
+                ultimo.append(u[0])
+                ultimo.append(lista_latitudes[0])
+                ultimo = tuple(ultimo)
+            else:
+                ultimo = []
+                ultimo.append(u[0])
+                ultimo.append(lista_latitudes[len(lista_latitudes) - 1])
+                ultimo = tuple(ultimo)
 
         coordenadas = []
         coordenadas.append("Punto" + str(n_punto))
-        diccionario2.update({"Punto" + str(n_punto): cerca_primero2})
+        diccionario2.update({"Punto" + str(n_punto): primero})
         n_punto += 1
         coordenadas.append("Punto" + str(n_punto))
-        diccionario2.update({"Punto" + str(n_punto): cerca_ultimo2})
+        diccionario2.update({"Punto" + str(n_punto): ultimo})
         n_punto += 1
 
         datos = {routeKey: coordenadas}
@@ -682,16 +732,8 @@ for routeKey in dicct_flujo_puntos_clave.keys():
         primero.append(punto_fuera[0])
         primero = tuple(primero)
 
-        ultimo = []
-        ultimo.append(punto_dentro[1])
-        ultimo.append(punto_dentro[0])
-        ultimo = tuple(ultimo)
-
         cerca_primero = 0
         d_cerca_p = 0
-
-        cerca_ultimo = 0
-        d_cerca_u = 0
 
         if isinstance(intersecciones2, shapely.geometry.multipoint.MultiPoint):
             g = len(intersecciones2)
@@ -715,52 +757,73 @@ for routeKey in dicct_flujo_puntos_clave.keys():
 
             contador_cortes += 1
 
-        if isinstance(intersecciones5, shapely.geometry.multipoint.MultiPoint):
-            g = len(intersecciones5)
+        sentido = -1
+        if el_de_fuera == 1:
+            u = diccionario.get(flujo[0])
+            u2 = diccionario.get(flujo[1])
         else:
-            g = 1
-        salir = 0
-        contador_cortes = 0
-        contador_cortes2 = 0
-        while contador_cortes < g:
-            if isinstance(intersecciones5, shapely.geometry.multipoint.MultiPoint):
-                c = intersecciones5[contador_cortes]
-            elif isinstance(intersecciones5, shapely.geometry.collection.GeometryCollection):
-                c = intersecciones5[contador_cortes]
-                if isinstance(intersecciones5, shapely.geometry.linestring.LineString):
-                    salir = 1
-
+            u = diccionario.get(flujo[len(flujo) - 1])
+            u2 = diccionario.get(flujo[len(flujo) - 2])
+        if u[0] != u2[0]:
+            if u[0] > u2[0]:
+                sentido = 1  # sentido hacia la derecha
             else:
-                c = intersecciones5
-                print("ETSE ES RARO" + str(routeKey))
+                sentido = 0  # sentido hacia la izquierda
 
-            if salir == 1:
-                break
-            punto = []
-            punto.append(c.y)
-            punto.append(c.x)
-            punto = tuple(punto)
+            if isinstance(intersecciones5, shapely.geometry.multipoint.MultiPoint):
+                if sentido == 0:
+                    ultimo = []
+                    ultimo.append(intersecciones5[0].x)
+                    ultimo.append(intersecciones5[0].y)
+                    ultimo = tuple(ultimo)
+                else:
+                    ultimo = []
+                    ultimo.append(intersecciones5[len(intersecciones5) - 1].x)
+                    ultimo.append(intersecciones5[len(intersecciones5) - 1].y)
+                    ultimo = tuple(ultimo)
+            else:
+                if sentido == 0:
+                    ultimo = []
+                    ultimo.append(intersecciones5[0].x)
+                    ultimo.append(intersecciones5[0].y)
+                    ultimo = tuple(ultimo)
+                else:
+                    ultimo = []
+                    ultimo.append(intersecciones5[len(intersecciones5) - 2].x)
+                    ultimo.append(intersecciones5[len(intersecciones5) - 2].y)
+                    ultimo = tuple(ultimo)
+        else:
+            if u[1] > u2[1]:
+                sentido = 1  # sentido hacia arriba, buscamos max
+            else:
+                sentido = 0
 
-            d_u = geopy.distance.distance(ultimo, punto).km
-            if cerca_ultimo == 0 or d_cerca_u > d_u:
-                cerca_ultimo = punto
-                d_cerca_u = d_u
+            lista_latitudes = []
+            for inter in intersecciones5:
+                if isinstance(inter, shapely.geometry.point.Point):
+                    lista_latitudes.append(inter.y)
+            lista_latitudes.sort(reverse=True)
 
-            contador_cortes += 1
+            if sentido == 1:
+                ultimo = []
+                ultimo.append(u[0])
+                ultimo.append(lista_latitudes[0])
+                ultimo = tuple(ultimo)
+            else:
+                ultimo = []
+                ultimo.append(u[0])
+                ultimo.append(lista_latitudes[len(lista_latitudes) - 1])
+                ultimo = tuple(ultimo)
 
         cerca_primero2 = []
         cerca_primero2.append(cerca_primero[1])
         cerca_primero2.append(cerca_primero[0])
         cerca_primero2 = tuple(cerca_primero2)
-        cerca_ultimo2 = []
-        cerca_ultimo2.append(cerca_ultimo[1])
-        cerca_ultimo2.append(cerca_ultimo[0])
-        cerca_ultimo2 = tuple(cerca_ultimo2)
 
         coordenadas = []
         if el_de_fuera == 1:
             coordenadas.append("Punto" + str(n_punto))
-            diccionario2.update({"Punto" + str(n_punto): cerca_ultimo2})
+            diccionario2.update({"Punto" + str(n_punto): ultimo})
             n_punto += 1
             coordenadas.append("Punto" + str(n_punto))
             diccionario2.update({"Punto" + str(n_punto): cerca_primero2})
@@ -770,15 +833,11 @@ for routeKey in dicct_flujo_puntos_clave.keys():
             diccionario2.update({"Punto" + str(n_punto): cerca_primero2})
             n_punto += 1
             coordenadas.append("Punto" + str(n_punto))
-            diccionario2.update({"Punto" + str(n_punto): cerca_ultimo2})
+            diccionario2.update({"Punto" + str(n_punto): ultimo})
             n_punto += 1
 
         datos = {routeKey: coordenadas}
         diccionario_nuevos_flujos.update(datos)
-
-cero_cero= 0
-for i in diccionario2.keys():
-    print(i + "    " + str(diccionario2.get(i)))
 
 print(len(diccionario_nuevos_flujos.keys()))
 
@@ -786,7 +845,7 @@ for i in diccionario_nuevos_flujos:
     vv = diccionario_nuevos_flujos.get(i)
     print(str(i) + "    " + str(diccionario2.get(vv[0])) + str(diccionario2.get(vv[1])))
 
-R = 10
+R = 18
 
 diccionario_distancias = {}
 lista_max_longitudes = []
@@ -836,12 +895,16 @@ for key in diccionario2.keys():
     if len(lista_max_longitudes) == 0:
         lista_max_longitudes.append(data2)
     else:
-        while contador < len(lista_max_longitudes):
-            if lista_max_longitudes[contador][1] <= data2[1]:
-                lista_max_longitudes.insert(contador, data2)
-                contador = len(lista_max_longitudes) + 10
+        while contador <= len(lista_max_longitudes):
+            if contador == len(lista_max_longitudes):
+                lista_max_longitudes.append(data2)
             else:
-                contador += 1
+                if lista_max_longitudes[contador][1] <= data2[1]:
+                    lista_max_longitudes.insert(contador, data2)
+                    contador = len(lista_max_longitudes) + 10
+                else:
+                    contador += 1
+
 print(len(lista_max_longitudes))
 print("DICDISTANCIAS    " + str(len(diccionario_distancias)))
 diccionario_puntos_agrupados = {}
@@ -870,7 +933,7 @@ for info in lista_max_longitudes:
 
         x_media = x_media / (len(adyacentes) + 1)
         y_media = y_media / (len(adyacentes) + 1)
-        tupla = (x_media, y_media)
+        tupla = (diccionario2.get(p)[0], diccionario2.get(p)[1])
         print(p + "         " + str(tupla))
         diccionario_puntos_agrupados.update({p: tuple(tupla)})
         for i in adyacentes:
@@ -879,6 +942,17 @@ for info in lista_max_longitudes:
                 diccionario_puntos_agrupados.update({i: tuple(tupla)})
                 puntos_cambiados.append(i)
 print("LONGITUD DEL DICCIONARIO" + str(len(diccionario_puntos_agrupados.keys())))
+
+f = open(
+        "C:\\Cosas_Cesar\\Proyectos\\Proyecto_Flujos\\Ficheros\\Report - Ejercicio " + ".txt", 'w')
+f.write("DICCIONARIO PUNTOS AGRUPADOS")
+for i in diccionario2.keys():
+    f.write(i + "    " + str(diccionario2.get(i)))
+
+for i in diccionario_puntos_agrupados:
+    f.write(str(i) + str(diccionario_puntos_agrupados.get(i)))
+    f.write("\n")
+
 
 NO = 0
 for i in diccionario2.keys():
@@ -900,8 +974,8 @@ for i in diccionario_nuevos_flujos.keys():
         print(a)
         print(b)
     t = []
-    t.append(b)
     t.append(a)
+    t.append(b)
 
     if t not in ya_dibujados or len(ya_dibujados) == 0:
         #datos_flujo = []
@@ -916,20 +990,6 @@ for i in diccionario_nuevos_flujos.keys():
         x3, y3 = linea.xy
         pyplot.plot(x3, y3)
 
-f = open(
-        "C:\\Cosas_Cesar\\Proyectos\\Proyecto_Flujos\\Ficheros\\Report - Ejercicio " + ".txt", 'w')
-f.write("DICCIONARIO PUNTOS AGRUPADOS")
-for i in diccionario_puntos_agrupados:
-    f.write(str(i) + str(diccionario_puntos_agrupados.get(i)))
-    f.write("\n")
-
-for i in diccionario_nuevos_flujos:
-    f.write(str(i) + str(diccionario_nuevos_flujos.get(i)))
-    f.write("\n")
-
-for i in diccionario2.keys():
-    f.write(str(i) + str(diccionario2.get(i)))
-    f.write("\n")
 
 print(flujos_total)
 print(len(diccionario2))
