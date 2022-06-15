@@ -1,0 +1,1312 @@
+{
+    "1_LECMTLI_CL": [
+        "LEMG",
+        "LEJR",
+        "GMMX",
+        "GMTT",
+        "GCLA",
+        "GMMN",
+        "GCXO",
+        "SBGR",
+        "LEZL",
+        "SGAS",
+        "GCLP",
+        "GCTS",
+        "SAEZ",
+        "SUMU",
+        "SCEL",
+        "GCRR",
+        "GMME",
+        "GOBD",
+        "GCFV",
+        "SBGL"
+    ],
+    "2_LECMTLI_CL": [
+        "LEMG",
+        "GMMX",
+        "LEAM",
+        "GMMN",
+        "GMME",
+        "LEGR",
+        "GMTT",
+        "GBYD",
+        "LXGB",
+        "LEZL",
+        "LEJR",
+        "GMMZ",
+        "GMAD",
+        "GCFV",
+        "GMFF",
+        "LPFR",
+        "GCLP",
+        "GCRR",
+        "GCTS",
+        "LEMO",
+        "SBGR",
+        "GOOY",
+        "FOOL"
+    ],
+    "3_LECMTLI_CL": [
+        "LEMT",
+        "LEMD",
+        "LEGT"
+    ],
+    "4_LECMTLI_CL": [
+        "LPFR",
+        "GMME",
+        "GMMX"
+    ],
+    "5_LECMTLI_CL": [
+        "LEAM",
+        "LEGR",
+        "GMFO",
+        "GMMN",
+        "HAAB",
+        "GMFF"
+    ],
+    "6_LECMTLI_CL": [
+        "LEMG",
+        "LEZL",
+        "GCTS",
+        "LERT"
+    ],
+    "7_LECMTLI_CL": [
+        "LEMG",
+        "LEZL",
+        "GMTT",
+        "GMAD",
+        "LEJR",
+        "GMMX",
+        "GMME",
+        "GMFF",
+        "GCRR",
+        "GQPA",
+        "GMMN",
+        "GCFV",
+        "GCTS",
+        "LPFR",
+        "SBCT",
+        "SBKP",
+        "SBGR",
+        "SBGL",
+        "SAEZ",
+        "GABS",
+        "GMMI",
+        "DIAP",
+        "GMFK",
+        "GCLP",
+        "GVNP",
+        "GVAC",
+        "GOOY",
+        "GQNO",
+        "GOBD",
+        "GVBA",
+        "GBYD",
+        "GMFO",
+        "LEAL"
+    ],
+    "8_LECMTLI_CL": [
+        "LEZL",
+        "GCXO",
+        "GCLP",
+        "SBGR",
+        "GCTS",
+        "GCFV",
+        "LEJR",
+        "LPFR",
+        "GCRR",
+        "SBKP",
+        "LEMG",
+        "SAEZ",
+        "SBCT",
+        "GMMI",
+        "GVAC",
+        "GVBA",
+        "GMMX",
+        "SBGL",
+        "GMMN",
+        "GMTT",
+        "SCEL",
+        "GMME",
+        "LERT",
+        "LEBZ",
+        "GCLA"
+    ],
+    "9_LECMTLI_CL": [
+        "LEZL"
+    ],
+    "10_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "11_LECMTLI_CL": [
+        "LEVC",
+        "LEAL",
+        "OMDB",
+        "DAAG",
+        "LEPA",
+        "LEMH",
+        "LMML",
+        "HECA",
+        "OJAI",
+        "HAAB",
+        "LECH",
+        "LTBS",
+        "DAOO",
+        "LIEE"
+    ],
+    "12_LECMTLI_CL": [
+        "MDSD",
+        "LPPR",
+        "SKBO",
+        "KEWR",
+        "MMMX",
+        "SKRG",
+        "KMIA",
+        "KJFK",
+        "SPJC",
+        "LPLA"
+    ],
+    "13_LECMTLI_CL": [
+        "LEAM",
+        "LEGR"
+    ],
+    "14_LECMTLI_CL": [
+        "LEAX",
+        "LEGR"
+    ],
+    "15_LECMTLI_CL": [
+        "LEBL",
+        "EDDK",
+        "LFBP",
+        "LEZG",
+        "LFLL"
+    ],
+    "16_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "17_LECMTLI_CL": [
+        "LEMT",
+        "LEMD",
+        "LEVC",
+        "LEAL",
+        "LECU",
+        "LEBB",
+        "LICA",
+        "LIEE"
+    ],
+    "18_LECMTLI_CL": [
+        "GCLP",
+        "LEMG"
+    ],
+    "19_LECMTLI_CL": [
+        "GCLP",
+        "GCRR",
+        "GMME"
+    ],
+    "20_LECMTLI_CL": [
+        "LEZL",
+        "GMTT",
+        "GMAD",
+        "LEGR"
+    ],
+    "21_LECMTLI_CL": [
+        "LEMO",
+        "GMMX"
+    ],
+    "22_LECMTLI_CL": [
+        "LPPT",
+        "GCTS",
+        "GCLP",
+        "GCXO",
+        "MMMX",
+        "SAEZ",
+        "SBGR",
+        "SCEL",
+        "SKBO",
+        "SLVR"
+    ],
+    "23_LECMTLI_CL": [
+        "DAOO",
+        "GMFO",
+        "GMFF",
+        "GMMZ"
+    ],
+    "24_LECMTLI_CL": [
+        "GMMN",
+        "GCLP",
+        "LEJR",
+        "GOBD",
+        "LEZL",
+        "LEMG",
+        "GCFV",
+        "GCTS",
+        "GMME",
+        "SBGR",
+        "SAEZ",
+        "SUMU",
+        "LPFR"
+    ],
+    "25_LECMTLI_CL": [
+        "EGKK",
+        "EGSS",
+        "LEVT",
+        "EGCC",
+        "LFOB",
+        "LFOK",
+        "LEMD",
+        "LFBO",
+        "EGNT",
+        "LFPG",
+        "LEGE",
+        "LFPB",
+        "LECU",
+        "LFOE",
+        "EBMB",
+        "EBCI",
+        "EHAM"
+    ],
+    "26_LECMTLI_CL": [
+        "LEMG",
+        "LEZL"
+    ],
+    "27_LECMTLI_CL": [
+        "UKKK",
+        "LHBP",
+        "LIPE",
+        "LEBL",
+        "LROP",
+        "LIRQ",
+        "LIMC",
+        "LLBG",
+        "OIIE",
+        "LIRP",
+        "LIME",
+        "LFML",
+        "LFMN",
+        "EDDM",
+        "OMDB",
+        "EDDP",
+        "LIRA",
+        "LOWW",
+        "LGAV",
+        "LICA",
+        "LIPZ",
+        "EDDF",
+        "LSGG",
+        "LKPR",
+        "LFLL",
+        "EBLG",
+        "LFBO",
+        "UUEE",
+        "OTHH",
+        "LIRN",
+        "LTFM",
+        "LDDU",
+        "EDDC",
+        "LOWS",
+        "LERS",
+        "LIMZ",
+        "LIRF",
+        "HAAB",
+        "LCLK",
+        "LRCV",
+        "LIPX",
+        "UKBB",
+        "EPKT",
+        "LBSF",
+        "DAAG"
+    ],
+    "28_LECMTLI_CL": [
+        "OMDB",
+        "LIRF",
+        "LEPA",
+        "LIRA",
+        "HAAB",
+        "LTBA",
+        "DTTA",
+        "OMAA",
+        "LECH",
+        "LEVC",
+        "DAAG",
+        "LLBG",
+        "HEGN",
+        "DTTJ",
+        "LEMH",
+        "LMML",
+        "HECA",
+        "LICC",
+        "LIRN",
+        "LIPZ",
+        "LIRQ",
+        "LEAL",
+        "LIMC",
+        "LEBL",
+        "LTFM",
+        "DTMB",
+        "LICZ",
+        "LBSF",
+        "HESH",
+        "OTHH",
+        "LTAC"
+    ],
+    "29_LECMTLI_CL": [
+        "LETO",
+        "LEMD"
+    ],
+    "30_LECMTLI_CL": [
+        "LETO",
+        "LEMD"
+    ],
+    "31_LECMTLI_CL": [
+        "LERL",
+        "LEZL"
+    ],
+    "32_LECMTLI_CL": [
+        "EGNR",
+        "LFST"
+    ],
+    "33_LECMTLI_CL": [
+        "LSGG"
+    ],
+    "34_LECMTLI_CL": [
+        "LECU"
+    ],
+    "35_LECMTLI_CL": [
+        "LEST",
+        "PAED"
+    ],
+    "36_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "37_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "38_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "39_LECMTLI_CL": [
+        "LEGT"
+    ],
+    "40_LECMTLI_CL": [
+        "EGPK",
+        "LEAS",
+        "LEST"
+    ],
+    "41_LECMTLI_CL": [
+        "LEAS",
+        "EICK"
+    ],
+    "42_LECMTLI_CL": [
+        "LEMG"
+    ],
+    "43_LECMTLI_CL": [
+        "LEZG"
+    ],
+    "44_LECMTLI_CL": [
+        "LECU"
+    ],
+    "45_LECMTLI_CL": [
+        "LEBZ"
+    ],
+    "46_LECMTLI_CL": [
+        "LEAM",
+        "LEGR"
+    ],
+    "47_LECMTLI_CL": [
+        "LEBZ"
+    ],
+    "48_LECMTLI_CL": [
+        "LEMG",
+        "LEJR"
+    ],
+    "49_LECMTLI_CL": [
+        "LETO"
+    ],
+    "50_LECMTLI_CL": [
+        "LETI"
+    ],
+    "51_LECMTLI_CL": [
+        "LECU"
+    ],
+    "52_LECMTLI_CL": [
+        "LECU"
+    ],
+    "53_LECMTLI_CL": [
+        "LECU"
+    ],
+    "54_LECMTLI_CL": [
+        "LERT",
+        "GMTT",
+        "GMFF"
+    ],
+    "55_LECMTLI_CL": [
+        "GCLA"
+    ],
+    "56_LECMTLI_CL": [
+        "LEJR",
+        "LEZL"
+    ],
+    "57_LECMTLI_CL": [
+        "GCRR"
+    ],
+    "58_LECMTLI_CL": [
+        "LEBB"
+    ],
+    "59_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "60_LECMTLI_CL": [
+        "LEVD"
+    ],
+    "61_LECMTLI_CL": [
+        "LEZG"
+    ],
+    "62_LECMTLI_CL": [
+        "LECU"
+    ],
+    "63_LECMTLI_CL": [
+        "LESA"
+    ],
+    "64_LECMTLI_CL": [
+        "LEST",
+        "LEVX",
+        "LPPR",
+        "KJFK",
+        "LECO",
+        "BIKF",
+        "CYYC"
+    ],
+    "65_LECMTLI_CL": [
+        "LEMD",
+        "EPKT",
+        "LFBD",
+        "EDDF",
+        "LEVT",
+        "LFPO",
+        "LFRS",
+        "ELLX",
+        "EDDG",
+        "EPPO",
+        "EDDW",
+        "EBCI",
+        "EBBR"
+    ],
+    "66_LECMTLI_CL": [
+        "LEVC",
+        "LEMI",
+        "LEIB",
+        "LETL"
+    ],
+    "67_LECMTLI_CL": [
+        "LEZG",
+        "LFLL"
+    ],
+    "68_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "69_LECMTLI_CL": [
+        "LFKJ",
+        "LTFM",
+        "DAAG",
+        "LLBG",
+        "OLBA",
+        "EDDP",
+        "LIRP",
+        "UKKK",
+        "LFMN",
+        "LHBP",
+        "LIRF",
+        "LIMC",
+        "LROP",
+        "LIME"
+    ],
+    "70_LECMTLI_CL": [
+        "LEBA"
+    ],
+    "71_LECMTLI_CL": [
+        "LFLL",
+        "LFML",
+        "EDDM",
+        "EPWA",
+        "EPPO",
+        "EPKT",
+        "LEBL",
+        "LKPR",
+        "LIME",
+        "LSGS",
+        "EDDV",
+        "LFLB",
+        "LFBO"
+    ],
+    "72_LECMTLI_CL": [
+        "LECU"
+    ],
+    "73_LECMTLI_CL": [
+        "LECU"
+    ],
+    "74_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "75_LECMTLI_CL": [
+        "LPPT",
+        "GCTS"
+    ],
+    "76_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "77_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "78_LECMTLI_CL": [
+        "EHAM",
+        "EGAA",
+        "EGPF",
+        "LEAS",
+        "EGSS",
+        "LEST",
+        "LSZH",
+        "EGKK",
+        "EGBB",
+        "EGLL",
+        "ESSA",
+        "EBBR",
+        "EGNM",
+        "LFRS",
+        "LELN",
+        "EIDW"
+    ],
+    "79_LECMTLI_CL": [
+        "LEVX",
+        "LECO",
+        "LEAS",
+        "LEST"
+    ],
+    "80_LECMTLI_CL": [
+        "LECO",
+        "LEVX",
+        "LEST",
+        "LEAS",
+        "LPPR",
+        "KJFK",
+        "EGKK",
+        "KDFW",
+        "LEBB",
+        "LEXJ",
+        "KAUS"
+    ],
+    "81_LECMTLI_CL": [
+        "LPPT",
+        "LEBZ"
+    ],
+    "82_LECMTLI_CL": [
+        "GCRR",
+        "SLCB",
+        "GCLP",
+        "LPPT",
+        "GCXO",
+        "SLVR",
+        "KMIA",
+        "LEBZ",
+        "SKBO",
+        "GVAC",
+        "GCTS",
+        "GCFV",
+        "MUHA",
+        "MDSD",
+        "SKRG"
+    ],
+    "83_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "84_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "85_LECMTLI_CL": [
+        "SAEZ"
+    ],
+    "86_LECMTLI_CL": [
+        "LEZL"
+    ],
+    "87_LECMTLI_CL": [
+        "GCLP",
+        "GCXO"
+    ],
+    "88_LECMTLI_CL": [
+        "LPPR"
+    ],
+    "89_LECMTLI_CL": [
+        "LEZG"
+    ],
+    "90_LECMTLI_CL": [
+        "LEMI",
+        "LEIB"
+    ],
+    "91_LECMTLI_CL": [
+        "LPPT"
+    ],
+    "92_LECMTLI_CL": [
+        "LPPT",
+        "GCLP",
+        "LEBZ",
+        "KJFK"
+    ],
+    "93_LECMTLI_CL": [
+        "LEMI",
+        "LEIB",
+        "LEVC"
+    ],
+    "94_LECMTLI_CL": [
+        "LPPT",
+        "LPMT",
+        "LEBZ",
+        "GOOY"
+    ],
+    "95_LECMTLI_CL": [
+        "LEBL",
+        "LFML",
+        "LKPR",
+        "LIPX",
+        "LOWW",
+        "LIME",
+        "LFBO",
+        "LFLL"
+    ],
+    "96_LECMTLI_CL": [
+        "LEGR",
+        "GEML",
+        "LEVC",
+        "LEAM",
+        "GMMW"
+    ],
+    "97_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "98_LECMTLI_CL": [
+        "LEBL",
+        "LFML",
+        "LIRP",
+        "LIPZ"
+    ],
+    "99_LECMTLI_CL": [
+        "EGAA"
+    ],
+    "100_LECMTLI_CL": [
+        "LEAS"
+    ],
+    "101_LECMTLI_CL": [
+        "LEAS",
+        "LEVD"
+    ],
+    "102_LECMTLI_CL": [
+        "LEAS",
+        "LEST",
+        "LPPR",
+        "EIKY",
+        "CYYZ",
+        "LEVX",
+        "CYUL",
+        "SKBO",
+        "BIKF",
+        "KIAD",
+        "EINN",
+        "LECO",
+        "KEWR",
+        "LELN",
+        "KFLL",
+        "KJFK",
+        "KPHL"
+    ],
+    "103_LECMTLI_CL": [
+        "EDJA",
+        "EDDF",
+        "LSZH",
+        "EDDV",
+        "LFLL",
+        "LFMT",
+        "EDDT",
+        "EDDN",
+        "LFBO",
+        "LFML",
+        "LSGG",
+        "EDDS",
+        "EPWA",
+        "LSZB",
+        "EDDK",
+        "EPWR",
+        "LKPR",
+        "LFMN",
+        "LIMC",
+        "LFGJ",
+        "LFSB",
+        "EDDL",
+        "ELLX",
+        "EHAM",
+        "LOWW",
+        "EPKT",
+        "EDDP",
+        "LFST",
+        "LIME",
+        "LIMF",
+        "EDDM",
+        "EDSB",
+        "EDDB",
+        "LFLY",
+        "EPPO",
+        "UUMU",
+        "ESSA",
+        "UUWW"
+    ],
+    "104_LECMTLI_CL": [
+        "LEZL"
+    ],
+    "105_LECMTLI_CL": [
+        "LEAS",
+        "LPPR",
+        "LEST"
+    ],
+    "106_LECMTLI_CL": [
+        "LEST",
+        "LPPR",
+        "LEAS",
+        "LECO",
+        "LEVX",
+        "BIKF",
+        "EGGP",
+        "EGAA",
+        "CYYZ"
+    ],
+    "107_LECMTLI_CL": [
+        "LMML",
+        "LEVC",
+        "LEAL",
+        "LEPA",
+        "OMDB",
+        "DTTJ",
+        "LIEE"
+    ],
+    "108_LECMTLI_CL": [
+        "LEBL",
+        "LIMC"
+    ],
+    "109_LECMTLI_CL": [
+        "LEVC",
+        "OMDB"
+    ],
+    "110_LECMTLI_CL": [
+        "LPPR"
+    ],
+    "111_LECMTLI_CL": [
+        "LPPR"
+    ],
+    "112_LECMTLI_CL": [
+        "LPPR",
+        "LEVX"
+    ],
+    "113_LECMTLI_CL": [
+        "LPPR",
+        "KORD",
+        "SKBO",
+        "LPCS",
+        "KJFK",
+        "CYUL",
+        "KIAD",
+        "KEWR",
+        "KFLL",
+        "KBOS",
+        "KCHS"
+    ],
+    "114_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "115_LECMTLI_CL": [
+        "LEZL",
+        "LEJR",
+        "GMMN",
+        "LEMG"
+    ],
+    "116_LECMTLI_CL": [
+        "LEJR",
+        "GCXO",
+        "SBGR"
+    ],
+    "117_LECMTLI_CL": [
+        "LEZL",
+        "GMMN",
+        "LEMG",
+        "GMTT",
+        "LEBZ",
+        "LPFR",
+        "LEMO"
+    ],
+    "118_LECMTLI_CL": [
+        "EDDV",
+        "UUDD"
+    ],
+    "119_LECMTLI_CL": [
+        "UUEE",
+        "UUDD",
+        "EDDF",
+        "LKPR",
+        "LFLL",
+        "EDDS",
+        "LSZH",
+        "EBBR",
+        "LEBL",
+        "EDDN",
+        "EDDM",
+        "UKBB",
+        "EDDT",
+        "EDDV",
+        "LFML",
+        "EPKT",
+        "EDDH",
+        "EPWA",
+        "EDDK",
+        "EPPO",
+        "LHBP",
+        "LSGG",
+        "LFSB",
+        "LIMC",
+        "LFBO",
+        "ELLX",
+        "EDFH",
+        "LIPE",
+        "EDVK",
+        "EDJA",
+        "LOWW",
+        "LFMN",
+        "EKCH",
+        "EDDP",
+        "EDSB",
+        "UUWW",
+        "LOWI",
+        "EPWR",
+        "LKTB",
+        "EYVI",
+        "LFLC",
+        "EDDB",
+        "EDNY",
+        "EDDL",
+        "EPKK",
+        "EDDC",
+        "LIME",
+        "ETSI",
+        "LFLB"
+    ],
+    "120_LECMTLI_CL": [
+        "LPPT"
+    ],
+    "121_LECMTLI_CL": [
+        "LPPT"
+    ],
+    "122_LECMTLI_CL": [
+        "LPPT",
+        "GCXO",
+        "SBGR",
+        "LEBZ",
+        "GCLP",
+        "LPMA",
+        "SPJC",
+        "MDLR",
+        "SKBO",
+        "LPBJ",
+        "KMIA",
+        "GCTS",
+        "SAEZ",
+        "MUHA",
+        "LPCS",
+        "KJFK",
+        "LPFR",
+        "GVAC",
+        "SCEL",
+        "KMCO",
+        "MMMX",
+        "SBBR",
+        "LPEV",
+        "KBOS",
+        "KIAD",
+        "KEWR",
+        "KFLL",
+        "LPLA",
+        "CYYT",
+        "TXKF"
+    ],
+    "123_LECMTLI_CL": [
+        "LEMD"
+    ],
+    "124_LECMTLI_CL": [
+        "EGGW",
+        "LFPB"
+    ],
+    "125_LECMTLI_CL": [
+        "EGGW",
+        "EGNX",
+        "LEAS",
+        "EGGD",
+        "EBCI",
+        "EGKK",
+        "LEVD",
+        "ELLX",
+        "EHEH",
+        "EGPH",
+        "LEST",
+        "LECO",
+        "LFRS",
+        "EGSS",
+        "EICK"
+    ],
+    "126_LECMTLI_CL": [
+        "LFBD"
+    ],
+    "127_LECMTLI_CL": [
+        "EBBR",
+        "ELLX",
+        "EKCH",
+        "EDDF",
+        "EDJA",
+        "EPKK",
+        "EDDK",
+        "EGCC",
+        "EGPH"
+    ],
+    "128_LECMTLI_CL": [
+        "EGSS",
+        "EHAM",
+        "EGCC",
+        "EDDP",
+        "EGGW",
+        "EDDK"
+    ],
+    "129_LECMTLI_CL": [
+        "LEAM"
+    ],
+    "130_LECMTLI_CL": [
+        "EIDW"
+    ],
+    "131_LECMTLI_CL": [
+        "EGSS",
+        "EDDB",
+        "EKCH",
+        "EDDH",
+        "LFPG",
+        "EHAM",
+        "EGGW",
+        "LFRS",
+        "LFOB",
+        "EBCI",
+        "EDSB",
+        "LFBO",
+        "EDDL",
+        "EDDK",
+        "EGKK",
+        "EDJA",
+        "EGNX",
+        "EDDF",
+        "EGGD",
+        "LFLL",
+        "EGPH",
+        "EHEH",
+        "LFPB",
+        "LIMC",
+        "LFBD",
+        "LFPO",
+        "EBLG",
+        "LFPT",
+        "LFSB",
+        "LSZH",
+        "EDDM",
+        "EDDP",
+        "EBBR",
+        "EDDN",
+        "LSGG"
+    ],
+    "132_LECMTLI_CL": [
+        "EDDL",
+        "EBBR",
+        "EDDF",
+        "ELLX",
+        "EPGD",
+        "EDDV",
+        "EDDS",
+        "EDDK",
+        "EDDT",
+        "LSZB",
+        "LEBB",
+        "EBLG",
+        "LFBO",
+        "LFPG",
+        "LEVT",
+        "LFPO",
+        "LFLL",
+        "EDDB",
+        "EDDH",
+        "EKCH",
+        "EDDW",
+        "EBCI",
+        "EDJA",
+        "LFOB",
+        "LEXJ",
+        "EDSB",
+        "EHEH",
+        "EGGD",
+        "EGPH",
+        "EGKK",
+        "LSZH",
+        "LSGS",
+        "LOWW",
+        "EDDM",
+        "LEPP",
+        "LFLC",
+        "EGGW",
+        "LFBZ",
+        "LIMF",
+        "EGNX",
+        "EHAM",
+        "LFBD",
+        "EDFH",
+        "EGSS",
+        "LIMC",
+        "EPMO",
+        "LFSB",
+        "LSGG",
+        "LFPB",
+        "ETAR",
+        "LFRS"
+    ],
+    "133_LECMTLI_CL": [
+        "LEBL"
+    ],
+    "134_LECMTLI_CL": [
+        "LFPO",
+        "EHAM",
+        "LEBB",
+        "LFPG",
+        "EDDF",
+        "EDDK",
+        "EDDV",
+        "EGHH",
+        "EKCH",
+        "ENGM",
+        "EDMA",
+        "EPKT",
+        "EGCC",
+        "LFSB",
+        "UUEE",
+        "EDDM",
+        "EGBB",
+        "EGKK",
+        "EKBI",
+        "EBCI",
+        "EHEH",
+        "EGLF",
+        "LFBP",
+        "EHRD",
+        "LFBD",
+        "EGSS",
+        "ENTO",
+        "ESSA",
+        "EBBR",
+        "EDDW",
+        "EDLV",
+        "LFPB",
+        "EDDL",
+        "EDDG",
+        "LFPV",
+        "LFBZ",
+        "EGVA",
+        "EFHK",
+        "EGUN",
+        "EETN",
+        "EBLG",
+        "ETAR",
+        "LFRS",
+        "LEVT",
+        "LFOE",
+        "LFBT",
+        "EDLP",
+        "ELLX",
+        "LFOB",
+        "UUWW",
+        "EGLL",
+        "LOWW",
+        "EDDT",
+        "EDDB",
+        "EDDE",
+        "LFQQ",
+        "EFTU",
+        "EDSB",
+        "ETNL",
+        "ESGG",
+        "LSZH"
+    ],
+    "135_LECMTLI_CL": [
+        "EBCI",
+        "EHAM",
+        "LFPG",
+        "EBBR",
+        "LEBB",
+        "EGKK",
+        "EHEH",
+        "EGCC",
+        "LFOB",
+        "EDDK",
+        "LFPO",
+        "LFRS",
+        "EGNX",
+        "LFBD",
+        "LFQQ",
+        "LFPB",
+        "EDFH",
+        "EDDF",
+        "ENGM",
+        "EDDH",
+        "EDDL",
+        "ELLX",
+        "EFHK",
+        "LFSB",
+        "EDLV"
+    ],
+    "136_LECMTLI_CL": [
+        "EGGD",
+        "EGTE",
+        "LEBB",
+        "EGKK",
+        "ENZV",
+        "EGAA",
+        "EGBB",
+        "EGGW",
+        "EIDW",
+        "EGSS",
+        "EGGP",
+        "EGNT",
+        "EGMC",
+        "EGPH",
+        "LFBD",
+        "BIKF",
+        "EGCC",
+        "ENBR",
+        "EHEH",
+        "EGNX",
+        "EGPF",
+        "EDDL",
+        "ENGM",
+        "EGPD",
+        "LEVT",
+        "EGLL",
+        "ENVA",
+        "LFQQ",
+        "EGTK",
+        "LFRI",
+        "EGLF",
+        "EHAM"
+    ],
+    "137_LECMTLI_CL": [
+        "EGCC",
+        "EGSS",
+        "EIDW",
+        "EGNM",
+        "EGKK",
+        "ENBR",
+        "EGGW",
+        "EGNX",
+        "EGGD",
+        "EGBB",
+        "EGHH",
+        "EGAA",
+        "LEBB",
+        "EIKY",
+        "EIKN",
+        "EGMC",
+        "LKPR",
+        "EGPH",
+        "EKBI",
+        "EGHQ",
+        "EHEH",
+        "EGPD",
+        "EINN",
+        "ENZV",
+        "ENHD",
+        "EGGP",
+        "EDDK",
+        "EGFF",
+        "LFRS",
+        "LFPO",
+        "EGCN",
+        "ESMX",
+        "EGNC",
+        "EGPK",
+        "LFQQ",
+        "EKCH",
+        "EGNT",
+        "EGTE",
+        "LEVT",
+        "EHAM"
+    ],
+    "138_LECMTLI_CL": [
+        "EBBR"
+    ],
+    "139_LECMTLI_CL": [
+        "EIDW"
+    ],
+    "140_LECMTLI_CL": [
+        "EHAM",
+        "LFPO",
+        "EBBR",
+        "LFBD",
+        "ENGM",
+        "EGKK",
+        "LFBP",
+        "LFPG",
+        "EBCI",
+        "EGBB",
+        "EGCC",
+        "LFPB",
+        "EDLV",
+        "EGSS",
+        "EGNX",
+        "EFHK",
+        "LFRG",
+        "EDDL",
+        "EDDF",
+        "LEVT",
+        "LFJL",
+        "EDDK",
+        "LFRS",
+        "LKPR",
+        "EGLL",
+        "LFQQ",
+        "ELLX",
+        "EDFH",
+        "EGLF",
+        "LEXJ",
+        "EHRD",
+        "ESMQ",
+        "EDDH",
+        "LFOB",
+        "EBAW",
+        "LFOT",
+        "LFBH",
+        "EDDP",
+        "EHEH",
+        "LFSB",
+        "EKCH",
+        "LEBB",
+        "ESGG",
+        "EGGW",
+        "ESSA",
+        "EBLG",
+        "EIDW",
+        "EDDB",
+        "EGGD",
+        "ESOE",
+        "ENML",
+        "LFRN",
+        "ESKN",
+        "EGWU",
+        "EDDT",
+        "EKBI",
+        "EBOS",
+        "EGPH",
+        "EDJA"
+    ]
+}
